@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".MainActivity">
-
-
     <ImageView
         android:id="@+id/flag"
-
         android:layout_width="match_parent"
         android:layout_height="317dp"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -22,26 +20,23 @@
         android:layout_below="@+id/flag"
         android:layout_marginTop="50dp"
         android:hint="enter the state"
+        android:textColorHint="@color/white"
         android:imeOptions="actionDone" />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/reply"
         android:id="@+id/ln"
         android:layout_marginTop="50dp">
-
-
         <TextView
             android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="The capital is :"
-            android:paddingRight="20dp"
+            android:textColor="@color/purple_700"
+            android:paddingStart="70dp"
 
             />
-
         <TextView
             android:id="@+id/capital"
             android:layout_width="215dp"
@@ -51,15 +46,10 @@
             android:editable="true"
             android:gravity="center"
             android:hint="Capital"
-
-
-            android:paddingLeft="20dp"
+            android:paddingEnd="70dp"
             android:paddingRight="20dp"
             android:textColorHint="@color/purple_700" />
     </LinearLayout>
-
-
-
     <Button
         android:id="@+id/submit"
         android:layout_width="105dp"
@@ -73,7 +63,6 @@
         android:layout_marginEnd="97dp"
 
         android:text="submit" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,40 +72,4 @@
         android:layout_marginEnd="70dp"
         android:id="@+id/next"
         android:text="Next" />
-
-
-    <!--    <Button-->
-<!--        android:id="@+id/b1"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        android:layout_above="@+id/b2"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:text="Button" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/b2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:text="Button" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/b3"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        android:layout_above="@+id/b1"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:text="Button" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/b4"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        android:layout_above="@+id/b3"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:text="Button" />-->
 </RelativeLayout>
